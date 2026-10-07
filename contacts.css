@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+}
+
+.header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    text-decoration: none;
+    color: #222;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 62px;
+}
+
+.logo span {
+    color: #555;
+}
+
+.navigation {
+    display: flex;
+    gap: 25px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+}
+
+.navigation a:hover,
+.navigation .active {
+    color: #777;
+}
+
+.header-button {
+    text-decoration: none;
+    color: white;
+    background: #222;
+    padding: 12px 18px;
+    border-radius: 5px;
+    margin-right: 62px;
+}
+
+.header-button:hover {
+    background: #555;
+}
+
+
+nav a:hover {
+    color: #4d63ff;
+}
+nav .active {
+    color: #4d63ff;
+    font-weight: bold;
+}
+
+
+.contact-intro {
+    width: 80%;
+    margin: 70px auto 50px;
+    text-align: center;
+}
+.contact-intro p {
+    color: #4d63ff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.contact-intro h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+.contact-intro span {
+    color: #666;
+}
+.contact-section {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+}
+.contact-info,
+.contact-form {
+    width: 50%;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+}
+.contact-info h2,
+.contact-form h2 {
+    margin-bottom: 30px;
+}
+.info {
+    margin-bottom: 25px;
+}
+.info h3 {
+    color: #4d63ff;
+    margin-bottom: 8px;
+}
+.info p {
+    color: #555;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+input,
+textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4d63ff;
+}
+button {
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #4d63ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    transform: scale(1.03);
+    background: #354bd4;
+}
+.map {
+    width: 90%;
+    margin: 60px auto;
+    text-align: center;
+}
+.map h2 {
+    margin-bottom: 25px;
+}
+.map-box {
+    height: 280px;
+    border-radius: 15px;
+    background: #dfe4ee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.map-box p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.map-box span {
+    color: #666;
+}
+
+
+.footer {
+    background: #222;
+    color: white;
+    padding-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 40px;
+    margin-left: 62px;
+    margin-right: 62px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-column .logo {
+    color: white;
+}
+
+.footer-column p {
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.footer-column h3 {
+    margin-top: 0;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444; padding: 20px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #aaa;
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contact-intro h1 {
+        font-size: 32px;
+    }
+    .contact-section {
+        flex-direction: column;
+    }
+    .contact-info,
+    .contact-form {
+        width: auto;
+    }
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
