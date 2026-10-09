@@ -254,14 +254,19 @@ nav .active {
 
 
 @media (max-width: 700px) {
-    .header {
-        flex-direction: column;
-        gap: 20px;
+    .header .container {
+        display: flex;
+        padding: 0;
+        margin: 0%;
+        gap: 48px;
     }
-    nav {
-        gap: 12px;
-        flex-wrap: wrap;
-        justify-content: center;
+    
+    .header {
+        justify-content: space-between;
+        gap: 32px;
+    }
+    .navigation {
+        display: none;
     }
     .about-top {
         flex-direction: column;
@@ -291,6 +296,16 @@ nav .active {
     .footer-links {
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-column-contact {
+        text-align: center;
+        padding-right: 0;
     }
 }
 
