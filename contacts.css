@@ -234,9 +234,18 @@ button:hover {
 
 
 @media (max-width: 700px) {
+    .header .container {
+        flex-direction: row;
+        padding: 0%;
+        margin: 0%;
+        gap: 48px;
+    }
     .header {
         flex-direction: column;
         gap: 20px;
+    }
+    .navigation {
+        display: none;
     }
     nav {
         gap: 12px;
@@ -261,5 +270,12 @@ button:hover {
     .footer-links {
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-column .logo {
+        padding: 0%;
     }
 }
