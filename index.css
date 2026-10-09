@@ -203,3 +203,33 @@ header button {
 .header-button:hover {
     background: #555;
 }
+
+@media (max-width: 420px) {
+    header {
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
+        margin: 0;
+        gap: 62px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .header-button {
+        width: 48px;
+        font-size: 11px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-card {
+        display: none;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+}
